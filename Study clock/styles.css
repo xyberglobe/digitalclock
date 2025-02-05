@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+.clock-container {
+    perspective: 1000px;
+}
+
+.clock {
+    font-size: 150px; /* Increased font size */
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.8);
+}
+
+.flip {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
